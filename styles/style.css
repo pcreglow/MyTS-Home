@@ -1,0 +1,61 @@
+html, body {
+  height: 100%;
+}
+body {
+  background: url('../images/iStock_000039688044Large.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.targetcolor {
+  color: #1E62AA;
+}
+
+.smartcolor {
+  color: #EE3D32;
+}
+
+#base-content {
+  background-color: #F5F5F5;
+  padding: 1em;
+  min-height: 600px;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.85);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#A6A6A6', endColorstr='#A6A6A6'); /* IE */
+  /* color: white; */
+  font-size: larger;
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3 {
+  color: white;
+}
+
+
+/* mimic the bootstrap 3 breadcrumb :before style, for customizing*/
+.divider {
+  color: #ccc;
+  padding: 0px 5px;
+}
+
+/* adjust navbar logo positioning */
+a.navbar-brand img {
+  margin-top: -5px;
+}
+
+/* Django tables2 customization */
+table.paleblue {
+  margin-bottom: 0px;
+}
+
+/* Django tables2 customization */
+.pagination > li {
+  background: none;
+}
+
+.pagination > li.cardinality {
+  display: block;
+}
