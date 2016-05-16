@@ -2,19 +2,29 @@ html, body {
   height: 100%;
 }
 body {
-  background: url('../images/iStock_000039688044Large.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #005db9;
 }
 
-.targetcolor {
-  color: #1E62AA;
+.navbar-default {
+  background: #ccd7e6;
 }
 
-.smartcolor {
-  color: #EE3D32;
+.navbar-default .navbar-nav > li > a {
+  color: #a22238;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #4975c1;
+}
+
+.targetcolor,
+.list-unstyled a {
+  color: #4975c1;
+}
+
+.smartcolor,
+.text-center {
+  color: #a22238;
 }
 
 #base-content {
@@ -24,7 +34,7 @@ body {
 }
 
 .jumbotron {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #ccd7e6;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#A6A6A6', endColorstr='#A6A6A6'); /* IE */
   /* color: white; */
   font-size: larger;
