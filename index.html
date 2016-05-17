@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    My TargetSmart
+  </title>
+
+
+  <link rel="SHORTCUT ICON" href="/site_media/static/my_tsmart/includes/favicon.ico" />
+
+
+
+
+
+  <link id="jquery-theme-link" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/smoothness/jquery-ui.css" type="text/css" />
+
+  <link id="chosen-style" rel="stylesheet" href="/site_media/static/my_tsmart/chosen/chosen.css" type="text/css" />
+
+  <link id="uniform-style" rel="stylesheet" href="/site_media/static/my_tsmart/uniform/themes/default/css/uniform.default.css" media="screen" />
+
+  <link rel="stylesheet" type="text/css" href="/site_media/static/django_tables2/themes/paleblue/css/screen.css" />
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+</head>
+
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame.
+             chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="https://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <!-- Top reveal (slides open, add class "topReveal" to links for open/close toggle ) -->
+  <div id="base-container" class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="styles/TSLogo.png" alt="TargetSmart" class="img-responsive">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Data
+                                    <b class="caret"></b>
+                                </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/automation">
+                    <i class="glyphicon glyphicon-cog"></i> Automation
+                  </a>
+                </li>
+                <li>
+                  <a href="/files/">
+                    <i class="glyphicon glyphicon-folder-open"></i> Files
+                  </a>
+                </li>
+                <li>
+                  <a href="/lookup">
+                    <i class="glyphicon glyphicon-search"></i> Data Lookup
+                  </a>
+                </li>
+                <li>
+                  <a href="/listbuilder">
+                    <i class="glyphicon glyphicon-th-list"></i> Listbuilder
+                  </a>
+                </li>
+                <li>
+                  <a href="/visuals">
+                    <i class="glyphicon glyphicon-picture"></i> Visuals
+                  </a>
+                </li>
+                <li>
+                  <a href="/api">
+                    <i class="glyphicon glyphicon-globe"></i> Web API
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Support
+                                        <b class="caret"></b>
+                                    </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/datadictionary?voterbase=on">
+                    <i class="glyphicon glyphicon-book"></i> Data Dictionary
+                  </a>
+                </li>
+                <li>
+                  <a href="/voterfile_schedule/">
+                    <i class="glyphicon glyphicon-calendar"></i> Voter file schedule
+                  </a>
+                </li>
+                <li>
+                  <a href="http://docs.targetsmart.com" target="_blank">
+                    <i class="glyphicon glyphicon-book"></i> User Guide
+                  </a>
+                </li>
+                <li>
+                  <a href="/support/email">
+                    <i class="glyphicon glyphicon-envelope"></i> Support
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="glyphicon glyphicon-user"></i> phillip.creglow
+                <b class="caret"></b>
+              </a>
+
+              <ul class="dropdown-menu">
+                <!-- dropdown menu links -->
+
+
+                <li>
+                  <a href="/admin/" title="Access admin console">
+                    <i class="glyphicon glyphicon-wrench"></i> Staff access
+                  </a>
+
+                </li>
+
+
+                <li>
+                  <a href="mailto:mytsmart.support@targetsmart.net" title="Email our support staff">
+                    <i class="glyphicon glyphicon-envelope"></i> Email support
+                  </a>
+
+                </li>
+                <li>
+                  <a href="/change_password">
+                    <i class="glyphicon glyphicon-lock"></i> Change password
+                  </a>
+
+                </li>
+                <li>
+                  <a href="/accounts/logout/?next=/">
+                    <i class="glyphicon glyphicon-log-out"></i> Logout
+                  </a>
+
+                </li>
+              </ul>
+            </li>
+            <!-- end of dropdown -->
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a target="blank" href="http://targetsmart.net" title="TargetSmart corp. website" class="small">
+                                    &copy;2016 TargetSmart</a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com/targetsmartcommunications" target="blank" title="TargetSmart on Facebook">
+                <i class="fa fa-facebook-official"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/_targetsmart" target="blank" title="TargetSmart on Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="row" id="breadcrumb-row">
+      <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li>
+            <a href="/">
+              <i class="glyphicon glyphicon-home"></i> My TargetSmart
+            </a>
+            <!-- <span class="divider">/</span> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end of row -->
+
+
+
+    <div id="base-content">
+
+
+      <div class="jumbotron">
+        <div class="text-center">
+          <h2>my
+                <span class="targetcolor">target</span><span class="smartcolor">smart</span>
+            </h2>
+        </div>
+        <div class="container" id="help-section">
+          <div class="row row-centered">
+            <div class="col-xs-6 col-md-4 col-centered col-fixed">
+              <p class="text-center">Data</p>
+              <ul class="list-unstyled">
+                <li role="presentation">
+                  <a href="/automation">
+                    <i class="glyphicon glyphicon-cog"></i> Automation - file processing
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="/lookup">
+                    <i class="glyphicon glyphicon-search"></i> Data Lookup
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="/files/">
+                    <i class="glyphicon glyphicon-folder-open"></i> File Browser
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="/listbuilder">
+                    <i class="glyphicon glyphicon-th-list"></i> Listbuilder
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a target="blank" href="/visuals">
+                    <i class="glyphicon glyphicon-picture"></i> Visuals
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="/api">
+                    <i class="glyphicon glyphicon-globe"></i> Web API
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-4 col-centered col-fixed">
+              <p class="text-center">Support</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/datadictionary?voterbase=on">
+                    <i class="glyphicon glyphicon-book"></i> Data Dictionary
+                  </a>
+                </li>
+                <li>
+                  <a href="/voterfile_schedule/">
+                    <i class="glyphicon glyphicon-calendar"></i> Voter File Schedule
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="http://docs.targetsmart.com" target="_blank">
+                    <i class="glyphicon glyphicon-book"></i> User Guide
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="/support/email">
+                    <i class="glyphicon glyphicon-envelope"></i> Support
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section id="content_body">
+        <div class="container-fluid">
+
+
+
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+  <!-- end of container-fluid -->
+
+
+
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Uniform (jquery uniform sytles for form elements -->
+  <script type="text/javascript" src="/site_media/static/my_tsmart/uniform/jquery.uniform.min.js"></script>
+
+
+  <!-- Chosen (fancy listboxes) -->
+  <script type="text/javascript" src="/site_media/static/my_tsmart/chosen/chosen.jquery.min.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-283445-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(function() {
+      $('.makepopover').popover();
+      $('.jumbotron').hide().fadeTo(1000, .85);
+    });
+  </script>
+
+
+
+
+
+  <script type="text/javascript">
+    //page specific jquery
+    $(document).ready(function() {
+    });
+  </script>
+</body>
+
+</html>
