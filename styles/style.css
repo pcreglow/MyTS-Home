@@ -44,6 +44,39 @@ body {
   color: white;
 }
 
+#base-content {
+    background: transparent;
+}
+#breadcrumb-row {
+    display: none;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    vertical-align: top;
+}
+.col-centered li {
+    padding: 1em 0 1em 0;
+}
+.col-fixed {
+    /* custom width */
+    width:320px;
+}
+#help-section {
+    margin-top: 4em;
+    padding:4em;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
 
 /* mimic the bootstrap 3 breadcrumb :before style, for customizing*/
 .divider {
